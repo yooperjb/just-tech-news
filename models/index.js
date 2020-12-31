@@ -10,7 +10,7 @@ User.hasMany(Post, {
 
 Post.belongsTo(User, {
     foreignKey: 'user_id',
-})
+});
 
 User.belongsToMany(Post, {
     through: Vote,
@@ -42,7 +42,7 @@ Post.hasMany(Vote, {
 
 Comment.belongsTo(User, {
     foreignKey: 'user_id'
-  });
+});
   
 Comment.belongsTo(Post, {
 foreignKey: 'post_id'
